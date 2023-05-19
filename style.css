@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html ,body {
+    width: 100%;
+    height: 100%;
+}
+
+#main2{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+#landingpage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+button{
+    width: 120px;
+    height:30px;
+    font-size:20px;
+    border-radius:20px;
+    border: none;
+    position: relative;
+    top:40vh;
+    left:15vw;
+    background-color:black;
+    color: white;
+    border: 2px solid white;
+}
+button:hover{
+    border: 2px solid #FFCC00;
+    background-color:black;
+    color:#FFCC00;
+}
+
+#leftpage {
+    width: 50%;
+    min-height: 100vh;
+    background-color: black;
+
+}
+
+#rightpage {
+    width: 50%;
+    min-height: 100vh;
+    background-image: url(https://fabbricagroup.fr/wp-content/uploads/2022/07/Plats_01@2x.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#leftpage h1 {
+    color: white;
+    font-family: "voyage";
+    font-weight: 500;
+    position: relative;
+    top: 35vh;
+    left: 10vw;
+    font-size: 5vw;
+}
+
+#page2 {
+    width: 100%;
+    /* min-height: 100vh; */
+    height: 760px;
+    background-color:black;
+    color: white;
+}
+
+small {
+    font-size: 20px;
+    position: relative;
+    bottom: 10vh;
+}
+
+#page2 h1 {
+    font-size: 8vw;
+    font-family:"voyage";
+    font-weight:lighter;
+    padding:20vh;
+}
+
+#page2 p {
+    font-size: 3vw;
+    padding: 2vw;
+    font-family:"voyage";
+    margin-left: 5vw;
+    margin-top:-20vh;
+    font-family: "voyage";
+    font-weight: lighter;
+}
+
+#photu {
+    width: 20vw;
+    height: 60vh;
+    background-color: white;
+    position: relative;
+    bottom: 50vh;
+    left:60vw;
+    background-position: center;
+    background-size: cover;
+    background-color: aqua;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/63ac1a155bfef4eb77972732_291122%20Quay%20House%201_291122%20Quay%20House%20101352_00033-p-500.jpg);
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -46%);
+    }
+
+    50% {
+        transform: translate(-50%, -54%);
+    }
+
+    100% {
+        transform: translate(-50%, -46%);
+    }
+
+}
+
+#photu {
+    animation: float 4s ease-in-out infinite;
+    max-height: 600px;
+    margin-top: 25vh;
+    margin-left: 10vw;
+}
+#menu{
+    width: 100vw;
+    min-height: 100vh;
+    background-color:black;
+    overflow: hidden;
+
+
+}
+#border{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    position: relative;
+    top:40vh;
+}
+#one{
+    display: flex;
+    width:40vw;
+    height:30vh;
+    position: relative;
+    bottom:12vh;
+    gap:100px;
+
+}
+.rotate{
+    transform: rotate(0deg);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    background-color:pink;
+}
+#menu h2{
+    color: white;
+    font-family: "voyage";
+    margin-left:5vw;
+    font-size:8vw;
+    font-weight: lighter;
+
+}
+#menu h2 small{
+    color: white;
+    font-family: "voyage";
+    margin:50px;
+
+}
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    background-color:red;
+}
+#last{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    position: relative;
+}
+#elem-div{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    position: relative;
+    overflow-y: hidden;
+    white-space: nowrap; /* elements ek hi line me anne ke liye diya hai*/ 
+    z-index: 99;
+    scroll-behavior: smooth;
+}
+#elem-div::-webkit-scrollbar{
+    display: none;
+}
+.elems{
+    width:15vw;
+    height: 100vh;
+    display: inline-block; /* element ek hi line me rahe */
+    border-right:0.5px solid #a4a4a462;
+    margin-left: -5px;
+    text-decoration: none;
+    position: relative;
+}
+.elems h2{
+    transform: rotate(-90deg);
+    position: absolute;
+    color: white;
+    /* background-color: #fff; */
+    width: 600px;
+    height: 190px;
+    z-index: 9999;
+    font-weight: 300;
+    font-size: 60px;
+    font-family: voyage;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    bottom: -21%; 
+    left: 0px;
+    transform-origin: left top;
+}
+#image{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    background-position: center;
+    transform: rotate(2deg);
+    background-size: cover;
+    transition: height 0.5s, width 0.5s, background-image 0.5s,transform cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+    /* background-color:red; */
+}
+#mid{
+    width: 100%;
+    height:250px;
+    background-color:black;
+}
+#mid h1{
+    font-size: 5vw;
+    font-family: voyage;
+    color: white;
+    padding:5vw;
+    margin-left: 5vw;
+    font-weight: lighter;
+}
+#mid h1 small{
+    margin-right:4vw;
+}
+.h {
+    z-index: 2;
+}
+
+.v {
+    z-index: 2;
+    color:palevioletred;
+}
+
+#circle {
+    z-index: 1;
+    pointer-events: none;
+    position: absolute;
+    transform: translate (-50%, -50%);
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    height: 2vw;
+    width: 2vw;
+    background-color: #ffff;
+    /* transition: cubic-bezier(0.19, 1, 0.22, 1)  .5s; */
+}
+ nav ul li {
+    list-style-type: none;
+    position: relative;
+    color: black;
+
+} 
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 4.9em;
+    top: 1em;
+    font-family: 'ivymoder';
+    font-weight: 500;
+    z-index: 99;
+    width: 100%;
+}
+ #navebar{
+    width: 100%;
+    min-height: fit-content;
+    margin-bottom:-10vh;
+} 
+#navebar a{
+    font-family: voyage;
+    font-weight:600;
+    justify-content: space-between;
+}
+
+#dark{
+    font-size:2vw;
+    position: relative;
+    right:-1vw;
+    top:2.5vh;
+    color:white;
+   
+
+}
+
+footer{
+     background-color: #000000ff;
+     position: relative;
+     width: 100%;
+     min-height:500px;
+     padding: 10rem 1rem;   
+     
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    min-width: 250px;
+    color:#f2f2f2f2;
+    font-family: poppins;
+    padding:0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom:25px;
+}
+.col h3{
+    color:#ff014fff;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.col h3::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background-color: #ff014fff;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+}
+.col .social a i{
+    color:#ff014fff;
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+    display: block;
+    text-decoration: none;
+    color:#f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 16px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color:#FFCC00;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color:#ff014fff;
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}
+
+#fa{
+    font-size: 24px;
+    padding-left: 23px;
+}
+
+#dtext{
+    font-size: larger;
+
+}
+
+#loader>h1 {
+    font-size: 50px;
+    position: relative;
+    top:50%;
+    left:38%;
+    font-family:voyage;
+    color:black;
+    font-weight: 600;
+}
+
+#loader{
+    width: 100vw;
+    height:100%;
+    position: absolute;
+    background-color:#FFCC00;
+    z-index: 99;
+    /* border-radius: 180px 180px 0 0; */
+}
+
+
+
+
+/********** Responsive Design ********/
+@media(max-width:500px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+@media(max-width:768px)
+{
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+
+
+
+
+
+
